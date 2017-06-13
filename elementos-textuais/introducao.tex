@@ -2,17 +2,11 @@
 \label{cap:introducao}
 A maioria dos problemas que exigem classificação, reconhecimento, controle, identificação, previsão, entre outros, onde a utilização de inteligência é exigida, o uso das Redes Neurais Artificiais(RNA) tem se mostrado uma poderosa ferramenta. Segundo \citeonline{silva2010redes} RNA vem sendo utilizada em diversas áreas, desde problemas de otimização computacional à diagnóstico de doenças. 
 
-Em RNA exitem algumas arquiteturas onde cada uma objetiva solucionar um tipo de problema, em termos de classificação de padrões podemos citar Mulayer Perceptron(MLP), Radial Basis Function(RBS), Adaptive Resonance Theory(ART) e Kohonen. Essas redes são divididas em redes com treinamento supervisionado e redes com treinamento não supervisionado.
+Em RNA exitem algumas arquiteturas onde cada uma objetiva solucionar um tipo de problema, em termos de classificação de padrões podemos citar Mutilayer Perceptron(MLP), Radial Basis Function(RBS), Adaptive Resonance Theory(ART) e Kohonen. Essas redes são divididas em redes com treinamento supervisionado e redes com treinamento não supervisionado.
 
- As redes com treinamento supervisionado tem como característica o fato de se ter disponível, considerando cada amostra dos sinais de entrada, as respectivas saídas desejadas através de uma tabela de atributos e valores, pois é a partir dessas informações que as estruturas formularão um padrão sobre como as saídas devem ser.
+ As redes com treinamento supervisionado tem como característica o fato de se ter disponível, considerando cada amostra dos sinais de entrada, as respectivas saídas desejadas através de uma tabela de atributos e valores, pois é a partir dessas informações que as estruturas formularão um padrão sobre como as saídas devem ser, ajustando assim os pesos sinápticos e os limiares de cada neurônio.
  
- Diferentemente das redes com treinamento supervisionados temos as redes ...
-
-
-
-
-\section{Motivação}
-\label{sec:motivacao}
+ Diferentemente das redes com treinamento supervisionados, quando se é aplicado um algoritmo de treinamento há as saídas desejadas para os respectivos resultados, dessa forma, a rede deve se organizar de modo a identificar os subconjuntos que contenha similaridades, fazendo com que os pesos sinápticos e os limiares dos neurônios se ajustem de forma que reflitam a representação interna da própria rede.
 
 
 \section{Objetivos}
@@ -21,5 +15,22 @@ Em RNA exitem algumas arquiteturas onde cada uma objetiva solucionar um tipo de 
 \subsection{Objetivo Geral}
 \label{sec:objetivo-geral}
 
+O objetivo central deste trabalho consiste em realizar um estudo comparativo sobre o desempenho das RNA que possuem treinamenento supervisionado e 	RNA que possuem treinamento não supervisionado considerando cinco bases de dados:
+
+\begin{enumerate}
+	\item Classificação de lírios(flor) em três espécies
+	\item Avaliar se um cancêr é maligno ou benigno
+	\item Classificação de cogumelos entre venenosos ou não
+	\item Fraudes em cartões de crédito
+	\item Diagnóstico de Diabetes	
+\end{enumerate}
+
+
 \subsection{Objetivo Específico}
 \label{sec:objetivo-específico}
+Em termo de objetivos específicos pretende-se:
+	\begin{alineas}
+		\item Realizar testes para clusterizar cada base de dados com as redes MLP, RBS, ART e Kohonen.
+		\item Anotar os resultados referente as taxas de erros e acurácia.
+		\item Comparar os resultados afim de determinar qual tipo de treinamento obtém os melhores resultados diante dos dados apresentados.
+	\end{alineas}

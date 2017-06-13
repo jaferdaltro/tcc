@@ -16,16 +16,37 @@ As redes neurais artificias(RNA) são inspirados nas redes neurais biológicas, 
 
 
 
-\section{Multilayer Perceptron}
+\section{MLP}
 \label{sec:multilayer-perceptron}
 
-A MLP utiliza uma camada intermediária de neurônio entre a camada de entrada e a camada de saída, geralmente este modelo é constituído de múltiplas camadas de neurônios, onde essas camadas são interconectadas às camadas posteriores em direção a camada de saída. 
-
-O perceptron Multicamadas utiliza um processo de treinamento chamado \textit{backpropagation} que é dividido em duas fases, sendo a primeira a \textit{forward} (propagação adiante), onde o conjunto de amostras de treinamento são inseridas nas entradas da rede e são propagadas camada a camada até a produção da saída respectiva.A segunda fase é chamada de \textit{backward} (propagação reversa) onde os pesos sinápticos e limiares são ajustados durante o processo.
- As aplicações sucessivas dessas fases fazem com que os pesos sinápticos e os limiares sejam ajustados automaticamente em cada iteração, implicando-se gradativa diminuição da soma dos erros produzidos pelas respostas da rede frente aquelas desejadas
+A MLP é uma rede neural de treinamento supervisionado e tem como uma das suas características a utilização de no mínimo uma camada intermediária de neurônios entre a camada de entrada e a camada de saída, entretanto, este modelo é constituído de múltiplas camadas de neurônios, onde essas camadas são interconectadas às camadas posteriores em direção a camada de saída \cite{gardner1998artificial} .
 
 
+	\begin{figure}[t]
+	\centering
+	\includegraphics[width=8cm]{figuras/mlp.jpg}
+	\caption{Ilustração da MLP}
+	\fonte{\cite{silva2010redes}}
+\end{figure}
 
+As MLP tem como característica o fato de ser uma das mais versáteis redes com aplicação em diversas áreas de conhecimento entre essas áreas podemos destacar:
+
+\begin{itemize}
+	\item Aproximação universal de funções;
+	\item Reconhecimento de funções
+	\item Previsão de séries temporais	
+\end{itemize}
+
+
+
+
+\subsection{Processo de treinamento da MLP}
+\label{sub:processo-de-treinamento-da-mlp}
+
+
+O perceptron Multicamadas utiliza um processo de treinamento chamado \textit{backpropagation} que é dividido em duas fases, sendo a primeira a \textit{forward} (propagação adiante), onde o conjunto de amostras de treinamento são inseridas nas entradas da rede e são propagadas camada a camada até a produção da saída respectiva.
+
+A segunda fase é chamada de \textit{backward} (propagação reversa) onde os pesos sinápticos e limiares são ajustados durante o processo. As aplicações sucessivas de \textit{backward} fazem com que os pesos sinápticos e os limiares sejam ajustados automaticamente em cada iteração, implicando-se gradativa diminuição da soma dos erros produzidos pelas respostas da rede frente aquelas desejadas.
 
 
 \section{Radial Basis Function}
